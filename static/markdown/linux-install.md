@@ -16,6 +16,16 @@ Steps to setup ghc and cabal:
 
 Steps to setup stack are [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#ubuntu).
 
+### Debian (jessie)
+
+Steps to setup ghc and cabal:
+
+    echo 'deb http://ftp.debian.org/debian/ jessie-backports main' | sudo tee /etc/apt/sources.list.d/backports.list
+    sudo apt-get update && apt-get -t jessie-backports install ghc cabal-install
+    cabal update && echo export PATH='$HOME/.cabal/bin:$PATH' >> $HOME/.bashrc
+
+Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#debian).
+
 ### Fedora 22
 
 GHC 7.8.4 is in the official Fedora repo.
