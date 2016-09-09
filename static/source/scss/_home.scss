@@ -17,6 +17,7 @@
 
 .pattern-bg {
     background: url("/static/img/pattern.png");
+    background-size: cover;
     color: #fff;
 
     padding: $grid-gutter-width/2 0 $grid-gutter-width;
