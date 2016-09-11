@@ -193,11 +193,11 @@ Stackage is a nightly generated stable repository of snapshots of package sets i
 
 Installing from a source repository is also possible. For example, to clone and install the network package from source, you would run:
 
-    $ git clone git@github.com:haskell/network.git
+    $ git clone https://github.com/haskell/network
     $ cabal install network/
 
 Or:
 
-    $ git clone git@github.com:haskell/network.git
+    $ git clone https://github.com/haskell/network
     $ cd network
     $ cabal install
