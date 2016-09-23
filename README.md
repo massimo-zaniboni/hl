@@ -64,6 +64,8 @@ to create a new CSS file (automatically creates a minified version as well).
 
 ## Running
 
+(Note: from within a development env where you run out of the dist folder, you want to ensure that `development` in src/HL/Development.hs is set to "True").
+
 It runs at: http://localhost:1990/
 
 Manually running the binary:
