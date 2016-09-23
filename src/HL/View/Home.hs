@@ -15,7 +15,7 @@ homeV vids =
   skeleton
     "Haskell Language"
     (\_ _ -> return ())
-    (\cur url ->
+    (\_cur url ->
        do navigation False [] Nothing url
           header url
           br_ []
@@ -93,7 +93,7 @@ try _ =
 -- | Community section.
 -- TOOD: Should contain a list of thumbnail videos. See mockup.
 community :: (Route App -> Text) -> [(Text, Text, Text)] -> Html ()
-community url vids =
+community _url vids =
   div_ [id_ "community-wrapper"]
        (do div_ [class_ "videos"]
                 (container_ (row_ (span12_ [class_ "col-sm-12"]

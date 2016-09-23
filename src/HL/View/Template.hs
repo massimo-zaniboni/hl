@@ -149,15 +149,10 @@ background url route =
 
 -- | Footer across the whole site.
 footer :: (Route App -> Text) -> Maybe (Route App) -> Html ()
-footer url r =
+footer url _r =
   div_ [class_ "footer"]
        (div_ [class_ "container"]
-             (p_ (case r of
-                    Just (WikiR page) ->
-                      wikiLicense (Just page)
-                    Just (WikiHomeR{}) ->
-                      wikiLicense (Nothing :: Maybe Text)
-                    _ -> hlCopy)))
+             (p_ hlCopy))
   where hlCopy =
           do container_
                        (row_ (do span3_ [class_ "col-sm-4 col-md-3"]
@@ -179,18 +174,3 @@ footer url r =
                                                       ,width_ "20"])))
                                  span12_ [class_ "col-sm-12"] (br_ [])
                        ))
-        wikiLicense :: Maybe Text -> Html ()
-        wikiLicense page =
-          do span_ [class_ "item"] wikiLink
-             span_ [class_ "item"]
-                   (do "Wiki content is available under "
-                       a_ [href_ "http://www.haskell.org/haskellwiki/HaskellWiki:Copyrights"]
-                          "a simple permissive license.")
-          where wikiLink =
-                  case page of
-                    Nothing ->
-                      a_ [href_ "http://www.haskell.org/haskellwiki/"] "Go to haskell.org wiki"
-                    Just pn ->
-                      a_ [href_ ("http://www.haskell.org/haskellwiki/index.php?title=" <>
-                                 pn <> "&action=edit")]
-                         "Edit this page"

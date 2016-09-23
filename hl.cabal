@@ -61,13 +61,13 @@ executable hl
                    , markdown
                    , monad-extras
                    , mtl
-                   , pandoc
+                   , pandoc > 1.17
                    , pandoc-types
                    , resourcet
                    , spoon
                    , tagstream-conduit
                    , text
-                   , text-icu
+--                   , text-icu
                    , transformers
                    , wai-logger
                    , warp

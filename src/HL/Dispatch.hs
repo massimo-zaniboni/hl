@@ -17,8 +17,6 @@ import HL.Controller.Home
 import HL.Controller.Irc
 import HL.Controller.MailingLists
 import HL.Controller.News
-import HL.Controller.Report
-import HL.Controller.Wiki
 import HL.Foundation
 import Yesod.Core.Dispatch
 

@@ -55,7 +55,7 @@ donateForm =
 
 statusWindow :: Html ()
 statusWindow =
-  div_ [ id_ "payment_status", class_ "alert alert-block fade", role_ "alert" ] (do
+  div_ [ id_ "payment_status", class_ "alert alert-block fade", role'_ "alert" ] (do
     button_ [ id_ "pay_status_close_btn", href_ "#", type_ "button"
             , class_ "close" ] "x"
     div_ [] (do
@@ -64,8 +64,8 @@ statusWindow =
       span_ [ id_ "status_title", class_ "sr-only" ] "Error:"
       span_ [ id_ "status_message" ] "  Enter an amount above."))
 
-role_ :: Text -> Attribute
-role_ = makeAttribute "role"
+role'_ :: Text -> Attribute
+role'_ = makeAttribute "role"
 
 aria_hidden_ :: Text -> Attribute
 aria_hidden_ = makeAttribute "role"
