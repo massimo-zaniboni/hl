@@ -58,3 +58,8 @@ The official repos on Arch Linux contain packages `ghc`, `cabal-install`, `happy
 
 Steps to setup stack are
 [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#arch-linux).
+
+### Generic Tarballs
+
+Generic minimal installers that work on most modern linux
+distributions are available via the [Haskell Platform](https://www.haskell.org/platform/linux.html#linux-generic)

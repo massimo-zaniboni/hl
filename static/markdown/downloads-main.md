@@ -1,8 +1,8 @@
 There are three widely used ways to install the Haskell toolchain on supported
 platforms. These are:
 
-- [Minimal installers](#minimal): Just GHC (the compiler) and Cabal (a package
-  install and build tool) are installed globally on your system, using your
+- [Minimal installers](#minimal): Just GHC (the compiler), and build
+  tools (primarily Cabal and Stack) are installed globally on your system, using your
   system's package manager.
 
 - [Stack](#stack): Installs the `stack` command globally: a project-centric
@@ -25,8 +25,8 @@ installed platform libraries.
 
 ### Haskell IDEs & other distributions
 
-In addition to the generic, cross-platform Haskell toolchain described above, 
-there are also easy-to-use, platform-specific distributions and IDEs. 
+In addition to the generic, cross-platform Haskell toolchain described above,
+there are also easy-to-use, platform-specific distributions and IDEs.
 The Haskell Wiki contains a [list of the most popular ones](https://wiki.haskell.org/Distributions).
 
 <!-- For information on other platforms and methods, please see the section on
@@ -38,10 +38,12 @@ The Haskell Wiki contains a [list of the most popular ones](https://wiki.haskell
 
 ### What they are <a name="minimal"></a>
 
-Minimal installers provide only the
+Minimal installers provide centrally the
 [GHC](https://www.haskell.org/ghc)  compiler and the
 [Cabal](https://www.haskell.org/cabal/) and
-[Stack](https://github.com/commercialhaskell/stack) tools for installing packages.
+[Stack](https://github.com/commercialhaskell/stack) tools for
+installing packages. Some may install further build tools (i.e. for
+parsing and lexing) as well.
 
 ### What you get
 
@@ -51,8 +53,9 @@ Minimal installers provide only the
 ### How to get them
 
 - [Linux](/downloads/linux)
-- [OS X](https://ghcformacosx.github.io/) (via GHC for Mac OS X)
-- [Windows](https://github.com/fpco/minghc#using-the-installer) (via MinGHC)
+- [OS X](https://www.haskell.org/platform/mac.html) (via the minimal platform)
+- [Windows](https://www.haskell.org/platform/windows.html) (via
+  the minimal platform)
 
 ### Where to get help <a name="help" />
 
