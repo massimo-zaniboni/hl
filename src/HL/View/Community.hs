@@ -52,7 +52,7 @@ online url =
      li_ (a_ [href_ "http://www.haskell.org/haskellwiki/Haskell"] "Wiki")
      li_ (a_ [href_ "http://planet.haskell.org/"] "The blogosphere")
      li_ (a_ [href_ "https://gitter.im/haskell-chat"] "Haskell Gitter Community Chat")
-
+     
 offline :: Html ()
 offline =
   do li_ (a_ [href_ "http://www.meetup.com/ATX-Haskell/"] "Austin Haskell Users Group")
@@ -97,4 +97,5 @@ sigs :: Html ()
 sigs =
   do li_ (a_ [href_ "http://industry.haskell.org/"] "Industrial Haskell Group")
      li_ (a_ [href_ "http://commercialhaskell.com/"] "Commercial Haskell Group")
+     li_ (a_ [href_ "http://www.datahaskell.org/"] "DataHaskell: data science, machine learning, numerical computation and related")
      li_ (a_ [href_ "http://lurk.org/groups/haskell-art/"] "Haskell Art")
