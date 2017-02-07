@@ -56,7 +56,8 @@ courses =
        [("University of Pennsylvania's CIS 194","https://www.seas.upenn.edu/~cis194/")
        ,("NICTA Functional Programming Course","https://github.com/NICTA/course")
        ,("University of Virginia's CS 1501","http://shuklan.com/haskell/")
-       ,("Stanford's cs240h","http://www.scs.stanford.edu/14sp-cs240h/")]
+       ,("Stanford's cs240h","http://www.scs.stanford.edu/14sp-cs240h/")
+       ,("Hendrix's CSCI 360","http://ozark.hendrix.edu/~yorgey/360/f16/")]
 
 tutorials :: Html ()
 tutorials =
@@ -69,6 +70,7 @@ tutorials =
        ,("Happy Learn Haskell Tutorial","https://www.happylearnhaskelltutorial.com/")
        ,("Yet Another Haskell Tutorial","http://en.wikibooks.org/wiki/Haskell/YAHT/Preamble")
        ,("Write Yourself a Scheme in 48 Hours","http://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours")
+       ,("Write Yourself a Scheme 2.0","https://wespiser.com/writings/wyas/home.html")
        ,("Learning Haskell","http://learn.hfm.io")]
 
 online :: Html ()
