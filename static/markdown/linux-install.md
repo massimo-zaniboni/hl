@@ -26,29 +26,49 @@ Steps to setup ghc and cabal:
 
 Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#debian).
 
-### Fedora 22
+### Fedora
 
-GHC 7.8.4 is in the official Fedora repo.
+GHC and cabal-install are in the official Fedora repos, to install:
 
-    sudo dnf install ghc
-    sudo dnf install cabal-install
+    sudo dnf install ghc cabal-install
+
+- Fedora 26 has ghc-8.0.2 and cabal-install-1.24.0.2
+- Fedora 25 has ghc-7.10.3 and cabal-install-1.22.9.0
+- Fedora 24 has ghc-7.8.4 and cabal-install-1.18.1.0
+
+There are also unofficial Fedora Copr ghc repos which include cabal-install:
+
+- [petersen/ghc-8.0.2 Copr repo (F24,F25)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.0.2)
+- [petersen/ghc-7.10.3 Copr repo (F24)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-7.10.3)
+
+(earlier 7.10.x and 8.0.1 coprs are also available).
+
+Note ghc from Copr cannot be installed in parallel with official Fedora ghc packages.
 
 Steps to setup stack are
 [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#fedora).
+You can also obtain stack from the fedora [petersen/stack Copr repo](https://copr.fedoraproject.org/coprs/petersen/stack/)
 
-### Fedora 21
+### EPEL for RHEL/CentOS/etc
+- EPEL 7 has ghc-7.6.3 and cabal-install-1.16.1.0
+- EPEL 5 and 6 have ghc-7.0.4 and cabal-install-0.10.2
 
-To install GHC 7.8.4 from the unofficial repo:
+To install these older versions of ghc and cabal-install from the official EPEL repo, just run the install command:
 
-    sudo yum-config-manager --add-repo https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
     sudo yum install ghc cabal-install
 
-As stated in [petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/) this ghc cannot be installed in parallel with Fedora/EPEL ghc.
+For newer versions of ghc you can use the unofficial Fedora Copr repos:
 
-If you want to install from the official repo that uses an older version of ghc (7.6.x) and cabal-install (1.16.x), just run the install command without badding the unofficial repo.
+- [petersen/ghc-8.0.2 Copr repo (EL7)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-8.0.2)
+- [petersen/ghc-7.10.3 Copr repo (EL7,EL6)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-7.10.3)
+- [petersen/ghc-7.8.4 Copr repo (EL7,EL6)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-7.8.4)
+- [petersen/ghc-7.4.2 Copr repo (EL6,EL5)](https://copr.fedorainfracloud.org/coprs/petersen/ghc-7.4.2)
+
+Note the ghc packages from Copr cannot be installed in parallel with EPEL ghc.
 
 Steps to setup stack are
 [on the stack website](https://github.com/commercialhaskell/stack/blob/master/doc/install_and_upgrade.md#fedora).
+You can also obtain stack from the fedora [petersen/stack Copr repo](https://copr.fedoraproject.org/coprs/petersen/stack/)
 
 ### Arch Linux
 
