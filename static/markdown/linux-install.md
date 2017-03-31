@@ -21,7 +21,7 @@ Steps to setup stack are [on the stack website](https://github.com/commercialhas
 Steps to setup ghc and cabal:
 
     echo 'deb http://ftp.debian.org/debian/ jessie-backports main' | sudo tee /etc/apt/sources.list.d/backports.list
-    sudo apt-get update && apt-get -t jessie-backports install ghc cabal-install
+    sudo apt-get update && sudo apt-get -t jessie-backports install ghc cabal-install
     cabal update && echo export PATH='$HOME/.cabal/bin:$PATH' >> $HOME/.bashrc
 
 Steps to setup stack are [on the stack website](https://docs.haskellstack.org/en/stable/install_and_upgrade/#debian).
