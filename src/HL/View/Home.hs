@@ -185,7 +185,7 @@ sponsors =
                          (p_ (do strong_ (a_ [href_ "https://iohk.io/"] "IOHK")
                                  "  is a technology company committed to using peer-to-peer technologies to provide financial services to the three billion people who don't have them.  They implement our first-principles cryptographic research in Haskell and are committed to the development of the Haskell ecosystem. IOHK is a sponsor of the Summer of Haskell."))
                   span6_ [class_ "col-sm-6"]
-                         (p_ (do strong_ (a_ [href_ "https://tweag.io"] "Tweag I/O")
+                         (p_ (do strong_ (a_ [href_ "https://www.tweag.io"] "Tweag I/O")
                                  "  is a network of software innovation labs across Europe. They have shipped Haskell in anything from tiny web services to large high-performance compute clusters with custom hardware. Tweag is a sponsor of Summer of Haskell." )))
 
          row_ (do span6_ [class_ "col-sm-6"]
