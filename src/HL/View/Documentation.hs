@@ -43,7 +43,7 @@ books =
       ,("Parallel and Concurrent Programming in Haskell","http://chimera.labs.oreilly.com/books/1230000000929")
       ,("Programming in Haskell","http://www.cs.nott.ac.uk/~pszgmh/pih.html")
       ,("Haskell: The Craft of Functional Programming","http://www.haskellcraft.com/craft3e/Home.html")
-      ,("The Haskell School of Music","http://haskell.cs.yale.edu/?post_type=publication&p=112")
+      ,("The Haskell School of Music","http://haskell.cs.yale.edu/wp-content/uploads/2015/03/HSoM.pdf")
       ,("Developing Web Applications with Haskell and Yesod","http://www.yesodweb.com/book")]
 
 courses :: Html ()
