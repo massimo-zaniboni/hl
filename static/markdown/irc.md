@@ -45,7 +45,7 @@ Plain text logs are also available at
 <tr><td>#haskell.fi</td><td> Finnish speakers</td></tr>
 <tr><td>#haskell-fr</td><td> French speakers</td></tr>
 <tr><td>#haskell.hr</td><td> Croatian speakers</td></tr>
-<tr><td>#haskell.it</td><td> Italian speakers</td></tr>
+<tr><td>#haskell-it</td><td> Italian speakers</td></tr>
 <tr><td>#haskell.jp</td><td> Japanese speakers</td></tr>
 <tr><td>#haskell.no</td><td> Norwegian speakers</td></tr>
 <tr><td>#haskell.pt</td><td> Portuguese speakers</td></tr>
